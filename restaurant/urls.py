@@ -12,5 +12,5 @@ urlpatterns = [
     # For API views
     path("menu/", views.MenuItemsView.as_view()),
     path("menu/<int:pk>", views.SingleMenuItemView.as_view()),
-    path("restaurant/booking/", include(router.urls)),
+    path("booking/", include(router.urls)),
 ]
