@@ -13,6 +13,7 @@ urlpatterns = [
     # For API views
     path("menu/", views.MenuItemsView.as_view()),
     path("menu/<int:pk>", views.SingleMenuItemView.as_view()),
+    path("msg/", views.msg),
     path("booking/", include(router.urls)),
     path('api-token-auth/', obtain_auth_token),
 ]
